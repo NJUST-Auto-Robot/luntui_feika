@@ -51,6 +51,7 @@
 #if USE_ZF_TYPEDEF
 // 数据类型声明
 // 尽量使用 stdint.h 定义的类型名称 避免冲突 这里可以裁剪
+
 typedef signed char         int8;                                               // 有符号  8 bits
 typedef signed short int    int16;                                              // 有符号 16 bits
 typedef signed int          int32;                                              // 有符号 32 bits
@@ -65,6 +66,14 @@ typedef volatile int8       vint8;                                              
 typedef volatile int16      vint16;                                             // 易变性修饰 有符号 16 bits
 typedef volatile int32      vint32;                                             // 易变性修饰 有符号 32 bits
 typedef volatile int64      vint64;                                             // 易变性修饰 有符号 64 bits
+
+#define uint8_t uint8
+#define uint16_t uint16
+#define uint32_t uint32
+#define int8_t int8
+#define int16_t int16
+#define int32_t int32
+
 #endif
 
 #define ZF_ENABLE       (1)
