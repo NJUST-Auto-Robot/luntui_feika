@@ -1,0 +1,9 @@
+Debug/user/*
+!Debug/user/
+
+Debug/code/*
+!Debug/code/
+
+Debug/libraries/*
+!Debug/libraries/
+
