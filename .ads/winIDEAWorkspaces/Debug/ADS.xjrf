@@ -607,33 +607,9 @@
         <Count>0</Count>
         <Enabled>true</Enabled>
         <Expression></Expression>
-        <Location>&quot;..\..\..\code\stm32_icm20948.c&quot;::1280</Location>
+        <Location>&quot;..\..\..\user\cpu0_main.c&quot;::103</Location>
         <ProcessFilter></ProcessFilter>
        </__.0>
-       <__.1>
-        <ActionEnabled>false</ActionEnabled>
-        <ActionParams></ActionParams>
-        <ActionScript></ActionScript>
-        <ActionShow>false</ActionShow>
-        <Condition>false</Condition>
-        <Count>0</Count>
-        <Enabled>true</Enabled>
-        <Expression></Expression>
-        <Location>&quot;..\..\..\icm20948_lib\Icm20948Setup.c&quot;::197</Location>
-        <ProcessFilter></ProcessFilter>
-       </__.1>
-       <__.2>
-        <ActionEnabled>false</ActionEnabled>
-        <ActionParams></ActionParams>
-        <ActionScript></ActionScript>
-        <ActionShow>false</ActionShow>
-        <Condition>false</Condition>
-        <Count>0</Count>
-        <Enabled>true</Enabled>
-        <Expression></Expression>
-        <Location>&quot;..\..\..\icm20948_lib\Icm20948Setup.c&quot;::200</Location>
-        <ProcessFilter></ProcessFilter>
-       </__.2>
       </BPs>
       <Processes>
        <__.0>

@@ -59,6 +59,7 @@
   "files.encoding": "gb2312",
   "files.associations": {
     "zf_common_headfile.h": "c",
-    "xutility": "c"
+    "xutility": "c",
+    "foc.h": "c"
   }
 }

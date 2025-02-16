@@ -38,6 +38,8 @@
 #include "bsp_log.h"
 #include "servo.h"
 #include "vmc.h"
+#include "zf_device_menc15a.h"
+#include "FOC.h"
 
 #pragma section all "cpu0_dsram"
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
@@ -50,6 +52,8 @@ servo_s servo4;
 
 vmc_leg_s leg_l;
 vmc_leg_s leg_r;
+
+FOC_MOTOR foc_motor_l;
 
 // **************************** 代码区域 ****************************
 
@@ -77,17 +81,26 @@ void BWRInit(void)
     servoInit(&servo3, ATOM1_CH0_P15_6, 250, 1220, 180, 0, 0);
     servoInit(&servo4, ATOM1_CH6_P20_10, 250, 1250, 180, 0, 0);
 
+    FOC_init(&foc_motor_l, 0x01);
     // wheelMotorInit(&motor_l, 0x144, MOTOR_DIRECTION_NORMAL);
     // wheelMotorInit(&motor_r, 0x141, MOTOR_DIRECTION_REVERSE);
 }
 
 void cc60_pit_ch0_isr_calllback()
 {
+    //*获取陀螺仪数据
+    ICM20948_task();
     //*腿舵机控制
-    vmcAntiSol(&leg_l, 0.1, 0);
-    vmcAntiSol(&leg_r, 0.1, 0);
+    vmcAntiSol(&leg_l, 0.03, 0);
+    vmcAntiSol(&leg_r, 0.03, 0);
     vmcToPos(&leg_l);
     vmcToPos(&leg_r);
+
+    svpwm_test(&foc_motor_l,0.005);
+
+    uint16_t angle_raw1 = menc15a_get_absolute_data(menc15a_1_module);
+    uint16_t angle_raw2 = menc15a_get_absolute_data(menc15a_2_module);
+    LOGINFO("%d,%d\n", angle_raw1, angle_raw2);
 }
 
 int core0_main(void)
@@ -101,32 +114,26 @@ int core0_main(void)
 
     BWRInit();
 
+    //*陀螺仪初始化
     gpio_init(P22_2, GPO, GPIO_HIGH, GPO_PUSH_PULL); // cs_high
     gpio_init(P22_1, GPO, GPIO_HIGH, GPO_PUSH_PULL); // miso_low
     soft_iic_init(&icm20948_iic, ICM_I2C_ADDR_REVB, 100, P22_3, P23_1);
-//    gpio_init(P15_7, GPO, GPIO_HIGH, GPO_PUSH_PULL); // cs_high
-//    gpio_init(P20_12,  GPO, GPIO_HIGH, GPO_PUSH_PULL); // miso_low
-//    soft_iic_init(&icm20948_iic, ICM_I2C_ADDR_REVB, 100, P20_11, P20_14);
     system_delay_ms(200);
     ICM20948_init(icmSettings);
 
+    menc15a_init();
+    
     cpu_wait_event_ready(); // 等待所有核心初始化完毕
     system_delay_ms(200);
+
+    pit_ms_init(CCU60_CH0, 5);
+
     while (TRUE)
     {
-        ICM20948_task();
-         LOGINFO("%f,%f,%f\n", angl_.yaw, angl_.pit, angl_.rol);
-        // LOGINFO("%f,%f,%f\n", acce.x, acce.y, acce.z);
-//         LOGINFO("%f,%f,%f\n", gyr_.x, gyr_.y, gyr_.z);
-//        LOGINFO("%f,%f,%f,%f\n", quat.x, quat.y, quat.z, quat.w);
-        system_delay_ms(100);
+        
+        // LOGINFO("%f,%f,%f\n", angl_.yaw, angl_.pit, angl_.rol);
+        system_delay_ms(10);
 
-        //        gpio_set_level(P32_4,GPIO_HIGH);
-        //        gpio_set_level(P23_1,GPIO_HIGH);
-        //        system_delay_ms(100);
-        //        gpio_set_level(P32_4,GPIO_LOW);
-        //        gpio_set_level(P23_1,GPIO_LOW);
-        ;
     }
 }
 
