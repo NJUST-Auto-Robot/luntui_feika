@@ -13,20 +13,76 @@
        <EditorPersist>
         <__.0>
          <BookmarkList></BookmarkList>
+         <CaretPos>102009</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\code\stm32_icm20948.c</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>1276</ScrollPos>
+        </__.0>
+        <__.1>
+         <BookmarkList></BookmarkList>
          <CaretPos>11699</CaretPos>
          <Encoding>6</Encoding>
          <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\libraries\infineon_libraries\Infra\Ssw\TC37A\Tricore\Ifx_Ssw_Tc0.c</FileName>
          <FileType>1</FileType>
          <ScrollPos>292</ScrollPos>
-        </__.0>
-        <__.1>
+        </__.1>
+        <__.2>
          <BookmarkList></BookmarkList>
-         <CaretPos>2972</CaretPos>
+         <CaretPos>2975</CaretPos>
          <Encoding>6</Encoding>
          <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\user\cpu0_main.c</FileName>
          <FileType>1</FileType>
-         <ScrollPos>59</ScrollPos>
-        </__.1>
+         <ScrollPos>85</ScrollPos>
+        </__.2>
+        <__.3>
+         <BookmarkList></BookmarkList>
+         <CaretPos>6866</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\icm20948_lib\Icm20948Setup.c</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>163</ScrollPos>
+        </__.3>
+        <__.4>
+         <BookmarkList></BookmarkList>
+         <CaretPos>72864</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\libraries\infineon_libraries\iLLD\TC37A\Tricore\Asclin\Std\IfxAsclin.h</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>2068</ScrollPos>
+        </__.4>
+        <__.5>
+         <BookmarkList></BookmarkList>
+         <CaretPos>24784</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\libraries\infineon_libraries\iLLD\TC37A\Tricore\Port\Std\IfxPort.h</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>602</ScrollPos>
+        </__.5>
+        <__.6>
+         <BookmarkList></BookmarkList>
+         <CaretPos>3700</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\libraries\zf_driver\zf_driver_delay.c</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>97</ScrollPos>
+        </__.6>
+        <__.7>
+         <BookmarkList></BookmarkList>
+         <CaretPos>7575</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\icm20948_lib\Icm20948DataBaseDriver.c</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>230</ScrollPos>
+        </__.7>
+        <__.8>
+         <BookmarkList></BookmarkList>
+         <CaretPos>5061</CaretPos>
+         <Encoding>6</Encoding>
+         <FileName>D:\Project\Embedded_project\Infineon_pro\25_feika_luntui\libraries\zf_common\zf_common_clock.c</FileName>
+         <FileType>1</FileType>
+         <ScrollPos>94</ScrollPos>
+        </__.8>
        </EditorPersist>
       </EditorPersist>
      </REG_ROOT>
@@ -77,30 +133,85 @@
      <ViewData>
       <AllViewBaseData>
        <__.0>
-        <ViewId>0</ViewId>
-        <ViewType>Symbols</ViewType>
+        <ViewId>6</ViewId>
+        <ViewType>Disassembly</ViewType>
        </__.0>
-       <__.1>
+       <__.10>
+        <ViewId>12</ViewId>
+        <ViewType>Document</ViewType>
+       </__.10>
+       <__.11>
+        <ViewId>13</ViewId>
+        <ViewType>Document</ViewType>
+       </__.11>
+       <__.12>
         <ViewId>1</ViewId>
         <ViewType>Output_Progress</ViewType>
-       </__.1>
-       <__.2>
+       </__.12>
+       <__.13>
+        <ViewId>0</ViewId>
+        <ViewType>Symbols</ViewType>
+       </__.13>
+       <__.1>
         <ViewId>2</ViewId>
         <ViewType>Locals</ViewType>
-       </__.2>
-       <__.3>
+       </__.1>
+       <__.2>
         <ViewId>3</ViewId>
         <ViewType>CustomWatch</ViewType>
+       </__.2>
+       <__.3>
+        <ViewId>4</ViewId>
+        <ViewType>Document</ViewType>
        </__.3>
        <__.4>
-        <ViewId>4</ViewId>
+        <ViewId>5</ViewId>
         <ViewType>Document</ViewType>
        </__.4>
        <__.5>
-        <ViewId>5</ViewId>
+        <ViewId>7</ViewId>
         <ViewType>Document</ViewType>
        </__.5>
+       <__.6>
+        <ViewId>8</ViewId>
+        <ViewType>Document</ViewType>
+       </__.6>
+       <__.7>
+        <ViewId>9</ViewId>
+        <ViewType>Document</ViewType>
+       </__.7>
+       <__.8>
+        <ViewId>10</ViewId>
+        <ViewType>Document</ViewType>
+       </__.8>
+       <__.9>
+        <ViewId>11</ViewId>
+        <ViewType>Document</ViewType>
+       </__.9>
       </AllViewBaseData>
+      <DissasemblyViews>
+       <__.0>
+        <ViewId>6</ViewId>
+        <ViewType>Disassembly</ViewType>
+        <ColumnData>
+         <__.0>
+          <Pos>0</Pos>
+          <Visible>true</Visible>
+          <Width>100</Width>
+         </__.0>
+         <__.1>
+          <Pos>0</Pos>
+          <Visible>true</Visible>
+          <Width>80</Width>
+         </__.1>
+         <__.2>
+          <Pos>0</Pos>
+          <Visible>true</Visible>
+          <Width>400</Width>
+         </__.2>
+        </ColumnData>
+       </__.0>
+      </DissasemblyViews>
       <DocumentViews>
        <__.0>
         <RelativePath>..\..\..\libraries\infineon_libraries\Infra\Ssw\TC37A\Tricore\Ifx_Ssw_Tc0.c</RelativePath>
@@ -112,6 +223,41 @@
         <ViewId>5</ViewId>
         <ViewType>Document</ViewType>
        </__.1>
+       <__.2>
+        <RelativePath>..\..\..\icm20948_lib\Icm20948Setup.c</RelativePath>
+        <ViewId>7</ViewId>
+        <ViewType>Document</ViewType>
+       </__.2>
+       <__.3>
+        <RelativePath>..\..\..\icm20948_lib\Icm20948DataBaseDriver.c</RelativePath>
+        <ViewId>8</ViewId>
+        <ViewType>Document</ViewType>
+       </__.3>
+       <__.4>
+        <RelativePath>..\..\..\libraries\infineon_libraries\iLLD\TC37A\Tricore\Asclin\Std\IfxAsclin.h</RelativePath>
+        <ViewId>9</ViewId>
+        <ViewType>Document</ViewType>
+       </__.4>
+       <__.5>
+        <RelativePath>..\..\..\code\stm32_icm20948.c</RelativePath>
+        <ViewId>10</ViewId>
+        <ViewType>Document</ViewType>
+       </__.5>
+       <__.6>
+        <RelativePath>..\..\..\libraries\infineon_libraries\iLLD\TC37A\Tricore\Port\Std\IfxPort.h</RelativePath>
+        <ViewId>11</ViewId>
+        <ViewType>Document</ViewType>
+       </__.6>
+       <__.7>
+        <RelativePath>..\..\..\libraries\zf_driver\zf_driver_delay.c</RelativePath>
+        <ViewId>12</ViewId>
+        <ViewType>Document</ViewType>
+       </__.7>
+       <__.8>
+        <RelativePath>..\..\..\libraries\zf_common\zf_common_clock.c</RelativePath>
+        <ViewId>13</ViewId>
+        <ViewType>Document</ViewType>
+       </__.8>
       </DocumentViews>
       <OtherViews>
        <__.0>
@@ -233,7 +379,7 @@
       <PrimaryDocumentPaneId>5</PrimaryDocumentPaneId>
       <Frames>
        <__.0>
-        <FocusedViewId>5</FocusedViewId>
+        <FocusedViewId>10</FocusedViewId>
         <FrameState>3</FrameState>
         <IsPrimary>true</IsPrimary>
         <Bounds>
@@ -248,105 +394,197 @@
          <IsDocumentPane>false</IsDocumentPane>
          <IsPinned>false</IsPinned>
          <IsTabbed>false</IsTabbed>
-         <Orientation>Vertical</Orientation>
+         <Orientation>Horizontal</Orientation>
          <TopTabViewId>-1</TopTabViewId>
          <ViewId>-1</ViewId>
          <Children>
           <__.0>
            <DockType>None</DockType>
-           <Extent>0.682002</Extent>
+           <Extent>0.75</Extent>
            <IsDocumentPane>false</IsDocumentPane>
            <IsPinned>false</IsPinned>
            <IsTabbed>false</IsTabbed>
-           <Orientation>Horizontal</Orientation>
+           <Orientation>Vertical</Orientation>
            <TopTabViewId>-1</TopTabViewId>
            <ViewId>-1</ViewId>
            <Children>
             <__.0>
-             <DockType>View</DockType>
-             <Extent>0.25</Extent>
+             <DockType>None</DockType>
+             <Extent>0.682002</Extent>
              <IsDocumentPane>false</IsDocumentPane>
              <IsPinned>false</IsPinned>
              <IsTabbed>false</IsTabbed>
-             <Orientation>None</Orientation>
+             <Orientation>Horizontal</Orientation>
              <TopTabViewId>-1</TopTabViewId>
-             <ViewId>0</ViewId>
-            </__.0>
-            <__.1>
-             <DockType>None</DockType>
-             <Extent>0.75</Extent>
-             <IsDocumentPane>true</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>true</IsTabbed>
-             <Orientation>None</Orientation>
-             <TopTabViewId>5</TopTabViewId>
              <ViewId>-1</ViewId>
              <Children>
               <__.0>
-               <DockType>Document</DockType>
-               <Extent>1</Extent>
+               <DockType>View</DockType>
+               <Extent>0.25</Extent>
                <IsDocumentPane>false</IsDocumentPane>
                <IsPinned>false</IsPinned>
                <IsTabbed>false</IsTabbed>
                <Orientation>None</Orientation>
                <TopTabViewId>-1</TopTabViewId>
-               <ViewId>4</ViewId>
+               <ViewId>0</ViewId>
               </__.0>
               <__.1>
-               <DockType>Document</DockType>
-               <Extent>1</Extent>
+               <DockType>None</DockType>
+               <Extent>0.75</Extent>
+               <IsDocumentPane>true</IsDocumentPane>
+               <IsPinned>false</IsPinned>
+               <IsTabbed>true</IsTabbed>
+               <Orientation>None</Orientation>
+               <TopTabViewId>10</TopTabViewId>
+               <ViewId>-1</ViewId>
+               <Children>
+                <__.0>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>4</ViewId>
+                </__.0>
+                <__.1>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>5</ViewId>
+                </__.1>
+                <__.2>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>7</ViewId>
+                </__.2>
+                <__.3>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>8</ViewId>
+                </__.3>
+                <__.4>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>9</ViewId>
+                </__.4>
+                <__.5>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>10</ViewId>
+                </__.5>
+                <__.6>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>11</ViewId>
+                </__.6>
+                <__.7>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>12</ViewId>
+                </__.7>
+                <__.8>
+                 <DockType>Document</DockType>
+                 <Extent>1</Extent>
+                 <IsDocumentPane>false</IsDocumentPane>
+                 <IsPinned>false</IsPinned>
+                 <IsTabbed>false</IsTabbed>
+                 <Orientation>None</Orientation>
+                 <TopTabViewId>-1</TopTabViewId>
+                 <ViewId>13</ViewId>
+                </__.8>
+               </Children>
+              </__.1>
+             </Children>
+            </__.0>
+            <__.1>
+             <DockType>None</DockType>
+             <Extent>0.317998</Extent>
+             <IsDocumentPane>false</IsDocumentPane>
+             <IsPinned>false</IsPinned>
+             <IsTabbed>false</IsTabbed>
+             <Orientation>Horizontal</Orientation>
+             <TopTabViewId>-1</TopTabViewId>
+             <ViewId>-1</ViewId>
+             <Children>
+              <__.0>
+               <DockType>View</DockType>
+               <Extent>0.4</Extent>
+               <IsDocumentPane>false</IsDocumentPane>
+               <IsPinned>false</IsPinned>
+               <IsTabbed>false</IsTabbed>
+               <Orientation>Vertical</Orientation>
+               <TopTabViewId>-1</TopTabViewId>
+               <ViewId>1</ViewId>
+              </__.0>
+              <__.1>
+               <DockType>View</DockType>
+               <Extent>0.3</Extent>
                <IsDocumentPane>false</IsDocumentPane>
                <IsPinned>false</IsPinned>
                <IsTabbed>false</IsTabbed>
                <Orientation>None</Orientation>
                <TopTabViewId>-1</TopTabViewId>
-               <ViewId>5</ViewId>
+               <ViewId>2</ViewId>
               </__.1>
+              <__.2>
+               <DockType>View</DockType>
+               <Extent>0.3</Extent>
+               <IsDocumentPane>false</IsDocumentPane>
+               <IsPinned>false</IsPinned>
+               <IsTabbed>false</IsTabbed>
+               <Orientation>Vertical</Orientation>
+               <TopTabViewId>-1</TopTabViewId>
+               <ViewId>3</ViewId>
+              </__.2>
              </Children>
             </__.1>
            </Children>
           </__.0>
           <__.1>
-           <DockType>None</DockType>
-           <Extent>0.317998</Extent>
+           <DockType>View</DockType>
+           <Extent>0.25</Extent>
            <IsDocumentPane>false</IsDocumentPane>
            <IsPinned>false</IsPinned>
            <IsTabbed>false</IsTabbed>
-           <Orientation>Horizontal</Orientation>
+           <Orientation>Vertical</Orientation>
            <TopTabViewId>-1</TopTabViewId>
-           <ViewId>-1</ViewId>
-           <Children>
-            <__.0>
-             <DockType>View</DockType>
-             <Extent>0.4</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>Vertical</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>1</ViewId>
-            </__.0>
-            <__.1>
-             <DockType>View</DockType>
-             <Extent>0.3</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>None</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>2</ViewId>
-            </__.1>
-            <__.2>
-             <DockType>View</DockType>
-             <Extent>0.3</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>Vertical</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>3</ViewId>
-            </__.2>
-           </Children>
+           <ViewId>6</ViewId>
           </__.1>
          </Children>
         </Dock>
@@ -367,10 +605,6 @@
       </FindInFilesDialogData>
      </GlobalData>
      <History>
-      <ComboBox>
-       <ComboBoxes>
-       </ComboBoxes>
-      </ComboBox>
      </History>
      <Options>
       <CallstackWindow>

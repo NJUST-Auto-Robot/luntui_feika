@@ -46,6 +46,7 @@ RM := rm -rf
 -include libraries/infineon_libraries/Infra/Ssw/TC37A/Tricore/subdir.mk
 -include libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/subdir.mk
 -include libraries/infineon_libraries/Configurations/subdir.mk
+-include icm20948_lib/subdir.mk
 -include code/subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C++_DEPS)),)

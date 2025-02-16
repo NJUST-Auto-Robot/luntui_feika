@@ -7,3 +7,5 @@ Debug/code/*
 Debug/libraries/*
 !Debug/libraries/
 
+Debug/icm20948_lib*
+!Debug/icm20948_libs

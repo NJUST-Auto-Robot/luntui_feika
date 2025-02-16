@@ -43,6 +43,8 @@
 #define soft_iic_gpio_low_scl()   ((Ifx_P *)soft_iic_obj->iic_scl)->OMR.U = 65536 << ((soft_iic_obj->scl_pin)&0x1f)
 #define soft_iic_gpio_low_sda()   ((Ifx_P *)soft_iic_obj->iic_sda)->OMR.U = 65536 << ((soft_iic_obj->sda_pin)&0x1f)
 
+// #define SOFT_IIC_SDA_IO_SWITCH 1
+
 //-------------------------------------------------------------------------------------------------------------------
 // 函数简介     软件 IIC 延时
 // 参数说明     delay           延时次数

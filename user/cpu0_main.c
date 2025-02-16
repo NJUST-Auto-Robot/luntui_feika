@@ -33,13 +33,14 @@
  * 2022-11-03       pudding            first version
  ********************************************************************************************************************/
 #include "zf_common_headfile.h"
+
+#include "stm32_icm20948.h"
 #include "bsp_log.h"
 #include "servo.h"
 #include "vmc.h"
 
 #pragma section all "cpu0_dsram"
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
-
 
 // *腿部实例定义
 servo_s servo1;
@@ -49,7 +50,6 @@ servo_s servo4;
 
 vmc_leg_s leg_l;
 vmc_leg_s leg_r;
-
 
 // **************************** 代码区域 ****************************
 
@@ -81,7 +81,6 @@ void BWRInit(void)
     // wheelMotorInit(&motor_r, 0x141, MOTOR_DIRECTION_REVERSE);
 }
 
-
 void cc60_pit_ch0_isr_calllback()
 {
     //*腿舵机控制
@@ -100,17 +99,34 @@ int core0_main(void)
     uart_init(UART_2, 115200, UART2_TX_P33_9, UART2_RX_P33_8);
     // uart_init(UART_3, 115200, UART3_TX_P21_7, UART3_RX_P21_6);
 
-    cpu_wait_event_ready(); // 等待所有核心初始化完毕
-
     BWRInit();
 
-    pit_ms_init(CCU60_CH0, 2);
+    gpio_init(P22_2, GPO, GPIO_HIGH, GPO_PUSH_PULL); // cs_high
+    gpio_init(P22_1, GPO, GPIO_HIGH, GPO_PUSH_PULL); // miso_low
+    soft_iic_init(&icm20948_iic, ICM_I2C_ADDR_REVB, 100, P22_3, P23_1);
+//    gpio_init(P15_7, GPO, GPIO_HIGH, GPO_PUSH_PULL); // cs_high
+//    gpio_init(P20_12,  GPO, GPIO_HIGH, GPO_PUSH_PULL); // miso_low
+//    soft_iic_init(&icm20948_iic, ICM_I2C_ADDR_REVB, 100, P20_11, P20_14);
+    system_delay_ms(200);
+    ICM20948_init(icmSettings);
 
+    cpu_wait_event_ready(); // 等待所有核心初始化完毕
+    system_delay_ms(200);
     while (TRUE)
     {
-        // 此处编写需要循环执行的代码
+        ICM20948_task();
+         LOGINFO("%f,%f,%f\n", angl_.yaw, angl_.pit, angl_.rol);
+        // LOGINFO("%f,%f,%f\n", acce.x, acce.y, acce.z);
+//         LOGINFO("%f,%f,%f\n", gyr_.x, gyr_.y, gyr_.z);
+//        LOGINFO("%f,%f,%f,%f\n", quat.x, quat.y, quat.z, quat.w);
+        system_delay_ms(100);
 
-        // 此处编写需要循环执行的代码
+        //        gpio_set_level(P32_4,GPIO_HIGH);
+        //        gpio_set_level(P23_1,GPIO_HIGH);
+        //        system_delay_ms(100);
+        //        gpio_set_level(P32_4,GPIO_LOW);
+        //        gpio_set_level(P23_1,GPIO_LOW);
+        ;
     }
 }
 

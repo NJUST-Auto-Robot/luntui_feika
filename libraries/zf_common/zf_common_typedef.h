@@ -67,12 +67,12 @@ typedef volatile int16      vint16;                                             
 typedef volatile int32      vint32;                                             // 易变性修饰 有符号 32 bits
 typedef volatile int64      vint64;                                             // 易变性修饰 有符号 64 bits
 
-#define uint8_t uint8
-#define uint16_t uint16
-#define uint32_t uint32
-#define int8_t int8
-#define int16_t int16
-#define int32_t int32
+// #define uint8_t uint8
+// #define uint16_t uint16
+// #define uint32_t uint32
+// #define int8_t int8
+// #define int16_t int16
+// #define int32_t int32
 
 #endif
 
